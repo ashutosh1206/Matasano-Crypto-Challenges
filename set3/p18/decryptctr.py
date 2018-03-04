@@ -21,8 +21,5 @@ ciphertext = "L77na/nrFsKvynd6HzOoG7GHTLXsTVu9qvY/2syLXzhPweyyMTJULu/6/kXX0KSvoO
 ciphertext = ciphertext.decode("base64")
 nonce = 0
 cnt = 0
-obj = secret(nonce,cnt)
-cipher = AES.new(key, AES.MODE_CTR, counter=obj.count)
+cipher = AES.new(key, AES.MODE_CTR, counter=secret(nonce,cnt).count)
 print cipher.decrypt(ciphertext)
-
-    
