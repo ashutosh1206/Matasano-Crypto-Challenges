@@ -1,0 +1,1 @@
+flag = "crypto{testing_attack_success}"
