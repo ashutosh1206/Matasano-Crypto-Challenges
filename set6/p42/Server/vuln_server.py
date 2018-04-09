@@ -71,5 +71,6 @@ def _verify(message, signature):
 			raise VerificationError("Signature Verification Failed!")
 	print "Wow, you just got the correct signature, I think I am gonna give you the flag now: ", flag
 
-signature = "15fa1a34f93ab73474b2e347098e9119183e7743c4b19409996c8cf28627220ccd419702e7516af09316c1a502b25bb66a3f5f83a297b6897b76e6e7a3f0c6b14e25eeb62b8ddf85d886328aea300d30046cec0681a5171fd015b2e58aff5f3de27fb70fda3a5ea14dc02d18d37040f0403ba80b83566dbe71d7ee894e3e1f37"
-_verify("hi mom", signature)
+# Signature obtained from the exploit script ../exploit.py
+signature = "012173244cfbd857eea633edfa750d23c8977594804a998c2de1e8022e33759dd71327e3564d0dc5d1a961"
+_verify("challenge", signature)
